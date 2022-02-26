@@ -1,0 +1,4 @@
+RewriteEngine on
+RewriteRule ^([a-z0-9-A-Z]+)$ $1.php
+RewriteRule ^([a-z0-9-_A-Z]+)/([^\.]+)$ $2.php
+RewriteRule ^([a-z0-9-_A-Z]+)s/([^\.]+)$ $1.php?id=$2
