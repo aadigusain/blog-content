@@ -15,6 +15,7 @@ uploads/*
 
 #heroku folder
 database.php
+cmt.php
 admin/*
 file/* 
 includes/mail.php
