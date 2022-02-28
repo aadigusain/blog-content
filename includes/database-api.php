@@ -5,27 +5,9 @@
   $today = date("Y-m-d");	   
 
 
-$servername = "localhost";
-$username = "root";
-$password = "";
-$dbname = "casite";
+ include './database.php'; 
 
-
-// Create connection
-$con = new mysqli($servername, $username, $password, $dbname);
-
-// Check connection
-if ($con->connect_error) {
-    die("Connection failed: " . $con->connect_error);
-	
-	  
-}
-           $sql = "SELECT * FROM blog order by date DESC ";  
-
-
-
-
-
+$sql = "SELECT * FROM blog order by date DESC ";  
 $json = array ();
 
 $result = $con->query($sql);
