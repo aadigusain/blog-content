@@ -1,7 +1,7 @@
 RewriteEngine on
 
 RewriteRule ^([a-z0-9-A-Z]+)$ $1.php
-RewriteRule ^([a-z0-9-_A-Z]+)s/([a-zA-Z0-9-]+)$ $1.php?id=$2
+RewriteRule ^([a-z0-9-_A-Z]+)s/([^\.]+)$ $1.php?id=$2
 RewriteRule ^([a-zA-Z0-9]+)/page/([0-9]+)$ $1.php?page=$2
-RewriteRule ^([a-z0-9-_A-Z]+)s/([a-zA-Z0-9]+)/page/([0-9]+)$ $1.php?id=$2&&page=$3
+RewriteRule ^([a-z0-9-_A-Z]+)s/([^\.]+)/page/([0-9]+)$ $1.php?id=$2&&page=$3
 
