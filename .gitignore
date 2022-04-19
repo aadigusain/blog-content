@@ -1,4 +1,3 @@
-
 package.json
 package-lock.json
 
@@ -8,16 +7,13 @@ content/*
 *.html
 *.zip
 
+
 #admin image folder
-img/*
+img/author/*
+img/post/*
 uploads/*
 
 
-#heroku folder
-database.php
-cmt.php
-admin/*
-file/* 
-includes/mail.php
-includes/database-api.php
-includes/array.php
+#database File
+*database.php
+*.sql
