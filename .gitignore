@@ -11,7 +11,7 @@ content/*
 #admin image folder
 img/author/*
 img/post/*
-uploads/*
+!uploads/*
 
 
 #database File
